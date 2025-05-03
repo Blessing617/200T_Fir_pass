@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Jul 27 09:59:48 2024
+# Process ID: 10620
+# Current directory: D:/Xilinx/Project/200t/Fir_pass
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4524 D:\Xilinx\Project\200t\Fir_pass\Fir_pass.xpr
+# Log file: D:/Xilinx/Project/200t/Fir_pass/vivado.log
+# Journal file: D:/Xilinx/Project/200t/Fir_pass\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Project/200t/Fir_pass/Fir_pass.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list \
+  CONFIG.Clock_Frequency {50} \
+  CONFIG.Coefficient_File {D:/Xilinx/Project/200t/Fir_pass/COE/lowpass_200k_20M.coe} \
+  CONFIG.Coefficient_Fractional_Bits {0} \
+  CONFIG.Coefficient_Sets {1} \
+  CONFIG.Coefficient_Sign {Signed} \
+  CONFIG.Coefficient_Structure {Inferred} \
+  CONFIG.Coefficient_Width {16} \
+  CONFIG.ColumnConfig {100,100,100,60,60,60,21} \
+  CONFIG.Data_Width {10} \
+  CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+  CONFIG.Output_Width {32} \
+  CONFIG.Quantization {Integer_Coefficients} \
+  CONFIG.Sample_Frequency {20} \
+] [get_ips fir_compiler]
+generate_target all [get_files  D:/Xilinx/Project/200t/Fir_pass/Fir_pass.srcs/sources_1/ip/fir_compiler/fir_compiler.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler] }
+export_ip_user_files -of_objects [get_files D:/Xilinx/Project/200t/Fir_pass/Fir_pass.srcs/sources_1/ip/fir_compiler/fir_compiler.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_synth_1
+launch_runs fir_compiler_synth_1 -jobs 20
+wait_on_run fir_compiler_synth_1
+export_simulation -of_objects [get_files D:/Xilinx/Project/200t/Fir_pass/Fir_pass.srcs/sources_1/ip/fir_compiler/fir_compiler.xci] -directory D:/Xilinx/Project/200t/Fir_pass/Fir_pass.ip_user_files/sim_scripts -ip_user_files_dir D:/Xilinx/Project/200t/Fir_pass/Fir_pass.ip_user_files -ipstatic_source_dir D:/Xilinx/Project/200t/Fir_pass/Fir_pass.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/modelsim} {questa=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/questa} {riviera=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/riviera} {activehdl=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/impl_1/FIR_pass.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/impl_1/FIR_pass.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property -dict [list \
+  CONFIG.Clock_Frequency {50} \
+  CONFIG.Coefficient_File {D:/Xilinx/Project/200t/Fir_pass/COE/lowpass_200k_10M.coe} \
+  CONFIG.Coefficient_Fractional_Bits {0} \
+  CONFIG.Coefficient_Sets {1} \
+  CONFIG.Coefficient_Sign {Signed} \
+  CONFIG.Coefficient_Structure {Inferred} \
+  CONFIG.Coefficient_Width {16} \
+  CONFIG.ColumnConfig {100,100,100,60,60,60,60,61} \
+  CONFIG.Data_Width {10} \
+  CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+  CONFIG.Output_Width {31} \
+  CONFIG.Quantization {Integer_Coefficients} \
+  CONFIG.Sample_Frequency {10} \
+] [get_ips fir_compiler]
+generate_target all [get_files  D:/Xilinx/Project/200t/Fir_pass/Fir_pass.srcs/sources_1/ip/fir_compiler/fir_compiler.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler] }
+export_ip_user_files -of_objects [get_files D:/Xilinx/Project/200t/Fir_pass/Fir_pass.srcs/sources_1/ip/fir_compiler/fir_compiler.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_synth_1
+launch_runs fir_compiler_synth_1 -jobs 20
+wait_on_run fir_compiler_synth_1
+export_simulation -of_objects [get_files D:/Xilinx/Project/200t/Fir_pass/Fir_pass.srcs/sources_1/ip/fir_compiler/fir_compiler.xci] -directory D:/Xilinx/Project/200t/Fir_pass/Fir_pass.ip_user_files/sim_scripts -ip_user_files_dir D:/Xilinx/Project/200t/Fir_pass/Fir_pass.ip_user_files -ipstatic_source_dir D:/Xilinx/Project/200t/Fir_pass/Fir_pass.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/modelsim} {questa=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/questa} {riviera=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/riviera} {activehdl=D:/Xilinx/Project/200t/Fir_pass/Fir_pass.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/impl_1/FIR_pass.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

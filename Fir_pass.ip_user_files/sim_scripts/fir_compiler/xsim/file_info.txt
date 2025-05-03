@@ -1,0 +1,2 @@
+fir_compiler.vhd,vhdl,xil_defaultlib,../../../../Fir_pass.gen/sources_1/ip/fir_compiler/sim/fir_compiler.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

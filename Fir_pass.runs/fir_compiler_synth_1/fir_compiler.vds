@@ -1,0 +1,1013 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Jul 27 11:13:14 2024
+# Process ID: 2068
+# Current directory: D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1
+# Command line: vivado.exe -log fir_compiler.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_compiler.tcl
+# Log file: D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1/fir_compiler.vds
+# Journal file: D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source fir_compiler.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 458.176 ; gain = 160.977
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fir_compiler
+Command: synth_design -top fir_compiler -part xc7a200tfbg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21924
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.660 ; gain = 409.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fir_compiler' [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/synth/fir_compiler.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fir_compiler - type: string 
+	Parameter C_COEF_FILE bound to: fir_compiler.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 3005 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 0 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 1 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 0 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 3001 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 100,100,100,60,60,60,60,61 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 10 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 10 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 10 - type: string 
+	Parameter C_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 31 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 31 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 31 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 31 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 601 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 5 - type: integer 
+	Parameter C_INPUT_RATE bound to: 5 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 5 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 0 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 640 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_19' declared at 'd:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_19' [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/synth/fir_compiler.vhd:198]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'fir_compiler' (0#1) [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/synth/fir_compiler.vhd:70]
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADDSUB in module calc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADD_BYPASS in module calc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module calc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][57] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][56] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][55] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][54] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][53] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][52] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][51] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][50] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][49] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][48] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][62] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][61] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][60] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][59] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][58] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][57] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][56] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][55] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][54] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][53] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][52] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][51] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][50] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][49] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][48] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][57] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][56] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][55] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][54] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][53] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][52] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][51] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][50] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][49] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][48] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][47] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][46] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][45] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][44] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][43] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][42] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][41] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][40] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][39] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][38] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][37] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][36] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][35] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][34] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][33] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][32] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][31] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][30] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][29] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][28] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][27] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][26] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][25] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][24] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][23] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][22] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][21] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][20] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][19] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][18] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][17] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][16] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][15] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][14] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][13] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][12] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][11] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][10] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][9] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][8] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][7] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][6] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][5] in module add_accum is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1927.125 ; gain = 998.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1927.125 ; gain = 998.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1927.125 ; gain = 998.863
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1977.676 ; gain = 25.750
+INFO: [Netlist 29-17] Analyzing 602 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/fir_compiler_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/fir_compiler_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Fir_pass/Fir_pass.gen/sources_1/ip/fir_compiler/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Parsing XDC File [D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2313.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2429.742 ; gain = 116.059
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:02:19 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:02:19 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:02:19 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:02:36 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay' (delay__parameterized4) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:02:55 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:03:02 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:03:07 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:03:27 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:03:30 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:03:30 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:03:38 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:03:38 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:03:38 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:03:39 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|calc__parameterized0 | Dynamic          | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|calc_1216            | (C'+(A'*B')')'   | 30     | 18     | 0      | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_1215            | (C'+(A'*B')')'   | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_1213            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1212            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1211            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1210            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1209            | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1208            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1207            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1206            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1205            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1204            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1203            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1202            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1201            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1200            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1199            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1198            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1197            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1196            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1195            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1194            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1193            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1192            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1191            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1190            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1189            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1188            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1187            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1186            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1185            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1184            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1183            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1182            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1181            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1180            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1179            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1178            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1177            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1176            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1175            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1174            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1173            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1172            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1171            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1170            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1169            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1168            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1167            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1166            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1165            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1164            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1163            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1162            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1161            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1160            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1159            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1158            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1157            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1156            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1155            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1154            | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1153            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1152            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1151            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1150            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1149            | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1148            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1147            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1146            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1145            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1144            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1143            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1142            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1141            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1140            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1139            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1138            | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1137            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1136            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1135            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1134            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1133            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1132            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1131            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1130            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1129            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1128            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1127            | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1126            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1125            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1124            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1123            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1122            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1121            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1120            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1119            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1118            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1117            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1116            | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1115            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1114            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1113            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1112            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1111            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1110            | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1109            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1108            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1107            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1106            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1105            | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1104            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1103            | (C'+(A'*B')')'   | 30     | 18     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_1101            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1100            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1099            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1098            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1097            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1096            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1095            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1094            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1093            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1092            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1091            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1090            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1089            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1088            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1087            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1086            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1085            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1084            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1083            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1082            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1081            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1080            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1079            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1078            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1077            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1076            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1075            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1074            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1073            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1072            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1071            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1070            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1069            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1068            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1067            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1066            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1065            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1064            | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1063            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1062            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1061            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1060            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1059            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1058            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1057            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1056            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1055            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1054            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1053            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1052            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1051            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1050            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1049            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1048            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1047            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1046            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1045            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1044            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1043            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1042            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1041            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1040            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1039            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1038            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1037            | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1036            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1035            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1034            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1033            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1032            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1031            | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1030            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1029            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1028            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1027            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1026            | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1025            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1024            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1023            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1022            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1021            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1020            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1019            | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1018            | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1017            | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1016            | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1015            | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1014            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1013            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1012            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1011            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1010            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1009            | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1008            | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1007            | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1006            | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1005            | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1004            | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1003            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1002            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1001            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_1000            | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_999             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_998             | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_997             | (PCIN+(A'*B')')' | 30     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_996             | (PCIN+(A'*B')')' | 30     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_995             | (PCIN+(A'*B')')' | 30     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_994             | (PCIN+(A'*B')')' | 30     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_993             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_992             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_991             | (C'+(A'*B')')'   | 30     | 15     | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_989             | (PCIN+(A'*B')')' | 30     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_988             | (PCIN+(A'*B')')' | 30     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_987             | (PCIN+(A'*B')')' | 30     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_986             | (PCIN+(A'*B')')' | 30     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_985             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_984             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_983             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_982             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_981             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_980             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_979             | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_978             | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_977             | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_976             | (PCIN+(A'*B')')' | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_975             | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_974             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_973             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_972             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_971             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_970             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_969             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_968             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_967             | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_966             | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_965             | (PCIN+(A'*B')')' | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_964             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_963             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_962             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_961             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_960             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_959             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_958             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_957             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_956             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_955             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_954             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_953             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_952             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_951             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_950             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_949             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_948             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_947             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_946             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_945             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_944             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_943             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_942             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_941             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_940             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_939             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_938             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_937             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_936             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_935             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_934             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_933             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_932             | (PCIN+(A'*B')')' | 30     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_931             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_930             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_929             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_928             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_927             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_926             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_925             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_924             | (C'+(A'*B')')'   | 30     | 8      | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_922             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_921             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_920             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_919             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_918             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_917             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_916             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_915             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_914             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_913             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_912             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_911             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_910             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_909             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_908             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_907             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_906             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_905             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_904             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_903             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_902             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_901             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_900             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_899             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_898             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_897             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_896             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_895             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_894             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_893             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_892             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_891             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_890             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_889             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_888             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_887             | (PCIN+(A'*B')')' | 30     | 9      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_886             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_885             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_884             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_883             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_882             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_881             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_880             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_879             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_878             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_877             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_876             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_875             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_874             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_873             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_872             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_871             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_870             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_869             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_868             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_867             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_866             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_865             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_864             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_863             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_862             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_861             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_860             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_859             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_858             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_857             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_856             | (C'+(A'*B')')'   | 30     | 7      | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_854             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_853             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_852             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_851             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_850             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_849             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_848             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_847             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_846             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_845             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_844             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_843             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_842             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_841             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_840             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_839             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_838             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_837             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_836             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_835             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_834             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_833             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_832             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_831             | (PCIN+(A'*B')')' | 30     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_830             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_829             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_828             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_827             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_826             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_825             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_824             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_823             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_822             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_821             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_820             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_819             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_818             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_817             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_816             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_815             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_814             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_813             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_812             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_811             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_810             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_809             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_808             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_807             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_806             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_805             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_804             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_803             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_802             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_801             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_800             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_799             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_798             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_797             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_796             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_795             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_794             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_793             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_792             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_791             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_790             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_789             | (C'+(A'*B')')'   | 30     | 6      | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_787             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_786             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_785             | (PCIN+(A'*B')')' | 30     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_784             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_783             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_782             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_781             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_780             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_779             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_778             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_777             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_776             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_775             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_774             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_773             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_772             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_771             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_770             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_769             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_768             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_767             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_766             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_765             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_764             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_763             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_762             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_761             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_760             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_759             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_758             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_757             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_756             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_755             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_754             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_753             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_752             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_751             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_750             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_749             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_748             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_747             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_746             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_745             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_744             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_743             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_742             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_741             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_740             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_739             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_738             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_737             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_736             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_735             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_734             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_733             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_732             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_731             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_730             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_729             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_728             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_727             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_726             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_725             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_724             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_723             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_722             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_721             | (C'+(A'*B')')'   | 30     | 4      | 48     | -      | 48     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|calc_720             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_719             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_718             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_717             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_716             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_715             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_714             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_713             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_712             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_711             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_710             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_709             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_708             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_707             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_706             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_705             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_704             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_703             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_702             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_701             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_700             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_699             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_698             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_697             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_696             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_695             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_694             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_693             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_692             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_691             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_690             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_689             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_688             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_687             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_686             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_685             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_684             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_683             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_682             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_681             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_680             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_679             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_678             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_677             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_676             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_675             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_674             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_673             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_672             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_671             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_670             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_669             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_668             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_667             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_666             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_665             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_664             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_663             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_662             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_661             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_660             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_659             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_658             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_657             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_656             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_655             | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_654             | (PCIN+(A'*B')')' | 30     | 0      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_653             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_652             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_651             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_650             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_649             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_648             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_647             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_646             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_645             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_644             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_643             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_642             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_641             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_640             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_639             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_638             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_637             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_636             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_635             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_634             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_633             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_632             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_631             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_630             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_629             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_628             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_627             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_626             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_625             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_624             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_623             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_622             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_621             | (PCIN+(A'*B')')' | 30     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_620             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_619             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_618             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_617             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_616             | (PCIN+(A'*B')')' | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_615             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_614             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_613             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_612             | (PCIN+(A'*B')')' | 30     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc_611             | (PCIN+(A'*B')')' | 30     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|calc                 | (PCIN+(A'*B')')' | 30     | 3      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++---------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |   602|
+|3     |LUT1    |   145|
+|4     |LUT2    |   674|
+|5     |LUT3    |  2769|
+|6     |LUT4    |     5|
+|7     |LUT5    |     6|
+|8     |LUT6    |     4|
+|9     |SRL16E  |  6426|
+|10    |SRLC32E |    60|
+|11    |FDRE    | 14511|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:03:39 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10847 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:02:25 . Memory (MB): peak = 2429.742 ; gain = 998.863
+Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:03:39 . Memory (MB): peak = 2429.742 ; gain = 1501.480
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2429.742 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 602 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2429.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6734da4
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:03:53 . Memory (MB): peak = 2429.742 ; gain = 1938.332
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1/fir_compiler.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2429.742 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fir_compiler, cache-ID = 3ee8d0297d9ff461
+INFO: [Coretcl 2-1174] Renamed 4242 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/Project/200t/Fir_pass/Fir_pass.runs/fir_compiler_synth_1/fir_compiler.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2429.742 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file fir_compiler_utilization_synth.rpt -pb fir_compiler_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 11:17:42 2024...
